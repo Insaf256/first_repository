@@ -7,10 +7,11 @@ public class Main {
 		} else {
 			int n = Integer.valueOf(args[0]);
 			double x = Double.valueOf(args[1]);
-			double sum = 1;
+			double sum = 0;
 			for (int i = n; i > 0; i--) {
-				sum = x / (n + 1 + sum);
+				sum = x / (i + 1 + sum);
 			}
+			sum += 1;
 			System.out.println("Sum = " + sum);
 		}
 	}
