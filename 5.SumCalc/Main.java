@@ -8,11 +8,15 @@ public class Main {
 			int n = Integer.valueOf(args[0]);
 			double x = Double.valueOf(args[1]);
 			double sum = 0;
-			for (int i = n; i > 0; i--) {
+			boolean flag = true;
+			for (int i = n; i > 0 && flag; i--) {
+				if (i + 1 + sum == 0) {
+					flag = false;
+				}
 				sum = x / (i + 1 + sum);
 			}
 			sum += 1;
-			System.out.println("Sum = " + sum);
+			System.out.println(flag ? "Sum = " + sum : "Unaviable value");
 		}
 	}
 }
