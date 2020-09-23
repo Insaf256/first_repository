@@ -8,12 +8,13 @@ public class Main {
 			int n = Integer.valueOf(args[0]);
 			double sum = 0;
 			for(int m = 1; m <= n; m++) {
-				sum += Double.valueOf(Math.pow(fuc(m-1), 2)) / Double.valueOf(fuc(2*m));
+				sum += Double.valueOf(Math.pow(fuc(m-1), 2)) 
+				/ Double.valueOf(fuc(2*m));
 			}
 			System.out.println(sum);
 		}
 	}
-	public static int fuc (int x) {
+	public static int fuc(int x) {
 		if (x == 0) {
 			return 1;
 		} else {
