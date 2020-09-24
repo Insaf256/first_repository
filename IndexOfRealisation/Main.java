@@ -7,7 +7,7 @@ public class Main {
 
 		int k = 0;
 		int h = -1;
-		for (int i = 0; i < str.length(); i++) { //opt:"i<str.length()-substr.length()+k"
+		for (int i = 0; i < str.length(); i++) { //i<str.length()-substr.length()+k
 			if (substr.charAt(k) == str.charAt(i)) {
 				k += 1;
 			} else {
