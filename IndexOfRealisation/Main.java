@@ -1,9 +1,14 @@
 public class Main {
 	public static void main(String[] args) {
+		if (args.length < 2) {
+			System.out.println("Pl, enter str and substr");
+			System.exit(0);
+		}
+		
 		String str = args[0];
 		String substr = args[1];
 		//String str = "asdfghjkl";
-		//String substr = "dfh";
+		//String substr = "asd";
 
 		int k = 0;
 		int h = -1;
