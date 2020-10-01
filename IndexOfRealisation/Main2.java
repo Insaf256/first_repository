@@ -15,7 +15,7 @@ public class Main2 {
 		for (int i = 0; i < str.length(); i++) { //i<str.length()-substr.length()+k
 			int c1 = substr.charAt(k);
 			int c2 = str.charAt(i);
-			if (c1 == c2 || Math.max(c1, c2) - Math.min(c1, c2) == 'a'-'A' ) {
+			if (c1 == c2 || Math.abs(c1 - c2) == 'a'-'A' ) {
 				k += 1;
 			}
 			else {
