@@ -18,7 +18,7 @@ public class Main {
 		int k = (int)(Math.random() * (s2-s1));
 		for (int i = 0; i < k; i++) {
 			arr2[i] = (int)(Math.random() * 99);
-		}
+		} 
 		for (int i = k; i < k + s1; i++) {
 			arr2[i] = arr1[i-k];
 		}
